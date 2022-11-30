@@ -1,0 +1,31 @@
+import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+
+public class Taxonomy{
+    public static void main(String args[]){
+        //Create List
+        ArrayList<String> Domain = new ArrayList<String>();
+        Domain.add("Archaea");
+        Domain.add("Eukaraia");
+        Domain.add("Bacteria");
+        
+        ArrayList<String> Kingdom = new ArrayList<String>();
+        Kingdom.add("Plant");
+        Kingdom.add("Protist");
+        Kingdom.add("Fungi");
+        Kingdom.add("Animalia");
+        Kingdom.add("Archaea");
+        Kingdom.add("Bacteria");
+        
+        List<String> list1 = new ArrayList();
+        List<String> list2 = new ArrayList();
+    
+        for(String aStr: Domain){
+            System.out.println("List 1 (Domain):" + aStr );
+        }
+        for(String aStr: Kingdom){
+            System.out.println("List 2 (Kingdom):"  + aStr );
+        }
+    }
+}
